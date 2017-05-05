@@ -23,5 +23,5 @@ echochohoo
 ```
 # TODO
 
--[ ] Support Powershell
--[ ] Support `-n` option as `echo` does
+- [ ] Support Powershell
+- [ ] Support `-n` and other options as `echo` does
