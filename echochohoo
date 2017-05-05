@@ -1,0 +1,11 @@
+#!/bin/zsh
+# reference: 
+# [1] http://tldp.org/LDP/abs/html/string-manipulation.html
+# [2] http://stackoverflow.com/questions/4750763/how-do-i-echo-a-sum-of-a-variable-and-a-number
+
+s=$1
+for i in $( seq 0 $((${#s} - 1)) ); 
+do
+    echo -n ${s:$i}; # "i" works well in bash, but zsh requires "$i".
+done
+echo
