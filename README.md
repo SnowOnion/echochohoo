@@ -1,7 +1,7 @@
 # echochohoo
 A command line utility. echochohoo "echo" == "echochohoo". 
 
-Works well in [`bash`](https://www.gnu.org/software/bash/) and [`zsh`](http://www.zsh.org). 
+Works well in [`bash`](https://www.gnu.org/software/bash/), [`zsh`](http://www.zsh.org) and [`PowerShell`](https://docs.microsoft.com/en-us/powershell/). 
 
 Doesn't work in `sh` and `csh`.
 
@@ -21,7 +21,18 @@ echochohoo
 ➜  echochohoo git:(master) ✗ zsh echochohoo 这是肥音你懂吗
 这是肥音你懂吗是肥音你懂吗肥音你懂吗音你懂吗你懂吗懂吗吗
 ```
+
+For PowerShell:
+``` powershell
+> .\echochohoo.ps1 echo
+echo
+cho
+ho
+o
+> .\echochohoo.ps1 echo -NoNewLine
+echochohoo
+```
 # TODO
 
-- [ ] Support Powershell
+- [x] Support Powershell and `-NoNewLine` option
 - [ ] Support `-n` and other options as `echo` does
